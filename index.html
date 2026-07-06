@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>観光日本語 授業進行ガイド（教師用）</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #f3f4f6; /* gray-100 */
+            color: #374151; /* gray-700 */
+        }
+        
+        /* Custom Speech Bubble Tail for Teacher Scripts */
+        .speech-bubble {
+            position: relative;
+        }
+        .speech-bubble::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 24px;
+            border-width: 0 10px 10px 10px;
+            border-color: transparent transparent #eff6ff transparent; /* match blue-50 */
+            display: block;
+            width: 0;
+        }
+        .speech-bubble-border::before {
+            border-color: transparent transparent #bfdbfe transparent; /* match blue-200 border */
+            top: -11px;
+            z-index: -1;
+        }
+
+        /* Marker for textbook text */
+        .textbook-text {
+            border-left: 4px solid #9ca3af;
+        }
+    </style>
+</head>
+<body class="antialiased pb-20">
+
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-3xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div>
+                <h1 class="text-xl font-bold text-gray-800">観光日本語 授業進行マニュアル</h1>
+                <p class="text-xs text-gray-500 mt-1">教師用：発話を促す「スマホ検索」活用ガイド</p>
+            </div>
+            
+            <!-- Redesigned Navigation Tabs -->
+            <nav class="flex space-x-1 bg-gray-100 p-1 rounded-lg">
+                <a href="#rules" class="px-4 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-white focus:bg-white transition-all">
+                    1. 授業の基本ルール
+                </a>
+                <a href="#lesson-plan" class="px-4 py-2 rounded-md text-sm font-bold text-indigo-700 bg-white shadow-sm ring-1 ring-black ring-opacity-5 transition-all">
+                    2. 模擬授業（25-30分）
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-4 py-8 space-y-12">
+
+        <section id="rules" class="space-y-6 scroll-mt-24">
+            
+            <div class="text-center space-y-2 mb-8">
+                <h2 class="text-2xl font-black text-gray-800">1. 授業の基本ルールと準備</h2>
+                <p class="text-gray-500 text-sm">授業をスムーズに進めるための、教師の心構えとテクニックです。</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                <div class="bg-indigo-600 px-6 py-4">
+                    <h3 class="font-bold text-white flex items-center text-lg">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        全体の授業構成（90分）
+                    </h3>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-700 mb-4">毎回の授業で<strong>「3つの観光スポット」</strong>を扱います。</p>
+                    <div class="bg-indigo-50 border border-indigo-100 rounded-xl p-4 flex flex-col sm:flex-row gap-4 items-center justify-center">
+                        <div class="text-center">
+                            <span class="block text-indigo-400 text-sm font-bold">スポット 1</span>
+                            <span class="block text-indigo-900 font-bold text-lg">約30分</span>
+                        </div>
+                        <svg class="w-6 h-6 text-indigo-300 hidden sm:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <div class="text-center">
+                            <span class="block text-indigo-400 text-sm font-bold">スポット 2</span>
+                            <span class="block text-indigo-900 font-bold text-lg">約30分</span>
+                        </div>
+                        <svg class="w-6 h-6 text-indigo-300 hidden sm:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <div class="text-center">
+                            <span class="block text-indigo-400 text-sm font-bold">スポット 3</span>
+                            <span class="block text-indigo-900 font-bold text-lg">約30分</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-4 text-center">※本ガイドは「1つのスポット」の進め方です。これを3回繰り返します。</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Teacher Strategy -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6">
+                    <h3 class="font-bold text-lg text-gray-800 mb-4 border-b pb-2 flex items-center">
+                        <span class="text-2xl mr-2">💡</span> 教師の負担を減らすコツ
+                    </h3>
+                    <div class="space-y-3 text-sm text-gray-700">
+                        <p class="text-red-600 font-bold">NG：教師がずっと一人で話し続けること</p>
+                        <p>旅行の知識がなくても大丈夫です。授業中に<strong>「スマホで調べる時間」</strong>を何度も作りましょう。</p>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                            <li>学生自身が調べることで、参加意識が高まります。</li>
+                            <li>調べたことを「日本語で発表」させ、発話量アップ！</li>
+                            <li>教師は「へえ、すごいですね！」と聞く側に回りましょう。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Student Types -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6">
+                    <h3 class="font-bold text-lg text-gray-800 mb-4 border-b pb-2 flex items-center">
+                        <span class="text-2xl mr-2">🗣️</span> 学生が黙ってしまったら？
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
+                            <h4 class="font-bold text-sm text-gray-800">A. 句点タイプ（はい/いいえ で終わる）</h4>
+                            <p class="text-xs text-indigo-700 mt-1 font-medium">▶ 「AとB、どちらですか？」と二択で聞く。</p>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
+                            <h4 class="font-bold text-sm text-gray-800">B. 短文タイプ（単語だけで終わる）</h4>
+                            <p class="text-xs text-indigo-700 mt-1 font-medium">▶ 「5W1H（誰と？いつ？どこで？）」で追及する。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-200">
+
+        <section id="lesson-plan" class="space-y-8 scroll-mt-24">
+            
+            <div class="text-center space-y-2 mb-8">
+                <span class="bg-indigo-100 text-indigo-800 font-bold px-3 py-1 rounded-full text-xs tracking-wider">所要時間：25〜30分</span>
+                <h2 class="text-3xl font-black text-gray-800 mt-2">2. 模擬授業「春の東京」</h2>
+                <p class="text-gray-500 text-sm">そのまま読める「台詞（セリフ）」付きの進行ガイドです。</p>
+            </div>
+
+            <!-- STEP 1 -->
+            <article class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden relative">
+                <div class="absolute top-0 left-0 w-2 h-full bg-blue-500"></div>
+                <div class="p-6 md:p-8">
+                    <div class="flex items-center gap-3 mb-6 border-b pb-4">
+                        <span class="bg-blue-500 text-white font-black px-3 py-1 rounded text-sm">STEP 1</span>
+                        <h3 class="text-xl font-bold text-gray-800">解説①：春の東京は？</h3>
+                        <span class="ml-auto text-sm font-medium text-gray-400">約7分</span>
+                    </div>
+
+                    <!-- Textbook content -->
+                    <div class="mb-6 textbook-text bg-gray-50 p-4 rounded-r-lg">
+                        <span class="text-xs font-bold text-gray-500 mb-2 block">📖 教科書の内容</span>
+                        <p class="text-sm text-gray-700 leading-relaxed font-serif">
+                            東京の春の気候は、暖かく過ごしやすい日が続く一方で、昼夜の温度差が大きいという特徴があります。3月は桜の開花時期で、昼間は15℃前後ですが、朝晩は6℃程度と温度差が大きくなります。4月、5月になると平均気温は上昇しますが、昼夜の温度差は10度前後と、依然として大きい傾向があります。
+                        </p>
+                    </div>
+
+                    <!-- Teacher Action Instruction -->
+                    <div class="mb-4">
+                        <h4 class="font-bold text-gray-800 text-sm mb-2 flex items-center">
+                            <span class="bg-gray-800 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full mr-2">1</span>
+                            本文を読む前の「導入」
+                        </h4>
+                        
+                        <!-- Teacher Script Bubble -->
+                        <div class="speech-bubble speech-bubble-border bg-blue-50 border border-blue-200 rounded-xl p-5 mt-4">
+                            <p class="text-xs font-bold text-blue-800 mb-2">🗣️ 以下の台詞をそのまま学生に聞いてください：</p>
+                            <p class="text-lg text-gray-900 font-bold tracking-wide">
+                                「皆さん、春の東京へ行ったことがありますか？」
+                            </p>
+                            <div class="mt-4 bg-white p-3 rounded border border-blue-100 text-sm">
+                                <p class="text-gray-500 mb-1">▶ 学生が「ない」と答えた（会話が止まった）場合：</p>
+                                <p class="text-gray-800 font-bold">「じゃあ、想像してください。3月の東京と台湾、どちらが寒いと思いますか？」</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Smartphone Search Action -->
+                    <div class="mt-8">
+                        <h4 class="font-bold text-gray-800 text-sm mb-2 flex items-center">
+                            <span class="bg-gray-800 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full mr-2">2</span>
+                            スマホ検索で発話を引き出す
+                        </h4>
+                        
+                        <div class="speech-bubble speech-bubble-border bg-blue-50 border border-blue-200 rounded-xl p-5 mt-4">
+                            <p class="text-xs font-bold text-blue-800 mb-2">🗣️ 導入後、以下の台詞で調べさせます：</p>
+                            <p class="text-base text-gray-900 font-bold mb-3 leading-relaxed">
+                                「教科書には15度と書いてありますが、今はどうでしょうか？<br>
+                                皆さん、今すぐスマホで『東京の天気』を調べてみてください。」
+                            </p>
+                            <p class="text-xs text-red-600 font-bold mb-3">（※ここで学生が調べ終わるまでしっかり待つ。教師が答えを言わない！）</p>
+                            <p class="text-base text-gray-900 font-bold">
+                                「〇〇さん、今日の東京の最高気温は何度ですか？最低気温は何度ですか？」
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden relative">
+                <div class="absolute top-0 left-0 w-2 h-full bg-blue-500"></div>
+                <div class="p-6 md:p-8">
+                    <div class="flex items-center gap-3 mb-6 border-b pb-4">
+                        <span class="bg-blue-500 text-white font-black px-3 py-1 rounded text-sm">STEP 2</span>
+                        <h3 class="text-xl font-bold text-gray-800">解説②：服装のアドバイス</h3>
+                        <span class="ml-auto text-sm font-medium text-gray-400">約6分</span>
+                    </div>
+
+                    <div class="mb-6 textbook-text bg-gray-50 p-4 rounded-r-lg">
+                        <span class="text-xs font-bold text-gray-500 mb-2 block">📖 教科書の内容</span>
+                        <p class="text-sm text-gray-700 leading-relaxed font-serif">
+                            春の東京観光では、重ね着ができる服装がおすすめです。3月はまだ寒いため、コートや厚手のジャケットが必要です。日中暖かくなったら脱げるように、カーディガンやストールを組み合わせるのが良いでしょう。4月、5月は過ごしやすいですが、朝晩や天気が悪い日は肌寒く感じることがあるため、薄手の羽織ものを一枚持っておくと安心です。
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-gray-800 text-sm mb-2 flex items-center">
+                            <span class="bg-gray-800 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full mr-2">1</span>
+                            本文を読む前に考えさせる
+                        </h4>
+                        
+                        <div class="speech-bubble speech-bubble-border bg-blue-50 border border-blue-200 rounded-xl p-5 mt-4">
+                            <p class="text-xs font-bold text-blue-800 mb-2">🗣️ 以下の台詞で質問します：</p>
+                            <p class="text-base text-gray-900 font-bold mb-4">
+                                「さっき、昼と夜の温度差が10度あると分かりました。皆さんなら、どんな服を持っていきますか？」
+                            </p>
+                            
+                            <div class="space-y-2">
+                                <div class="bg-white p-3 rounded border border-blue-100 text-sm">
+                                    <p class="text-gray-500 mb-1">▶ 学生A（句点タイプ）が黙ってしまった場合：</p>
+                                    <p class="text-gray-800 font-bold">「コートですか？それともTシャツですか？」と二択で聞く。</p>
+                                </div>
+                                <div class="bg-white p-3 rounded border border-blue-100 text-sm">
+                                    <p class="text-gray-500 mb-1">▶ 学生B（短文タイプ）が「ジャケットです」とだけ答えた場合：</p>
+                                    <p class="text-gray-800 font-bold">「いいですね。何色のジャケットですか？厚いですか、薄いですか？」と掘り下げる。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden relative">
+                <div class="absolute top-0 left-0 w-2 h-full bg-emerald-500"></div>
+                <div class="p-6 md:p-8">
+                    <div class="flex items-center gap-3 mb-6 border-b pb-4">
+                        <span class="bg-emerald-500 text-white font-black px-3 py-1 rounded text-sm">STEP 3</span>
+                        <h3 class="text-xl font-bold text-gray-800">単語補給駅（語彙練習）</h3>
+                        <span class="ml-auto text-sm font-medium text-gray-400">約5分</span>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="bg-gray-100 border border-gray-200 px-3 py-1.5 rounded-md text-sm text-gray-700 font-medium">気候</span>
+                        <span class="bg-gray-100 border border-gray-200 px-3 py-1.5 rounded-md text-sm text-gray-700 font-medium">温度</span>
+                        <span class="bg-gray-100 border border-gray-200 px-3 py-1.5 rounded-md text-sm text-gray-700 font-medium">特徴</span>
+                        <span class="bg-gray-100 border border-gray-200 px-3 py-1.5 rounded-md text-sm text-gray-700 font-medium">依然</span>
+                        <span class="bg-gray-100 border border-gray-200 px-3 py-1.5 rounded-md text-sm text-gray-700 font-medium">自然豊か</span>
+                        <span class="bg-gray-100 border border-gray-200 px-3 py-1.5 rounded-md text-sm text-gray-700 font-medium">楽しめる</span>
+                        <span class="bg-gray-100 border border-gray-200 px-3 py-1.5 rounded-md text-sm text-gray-700 font-medium">過ごす</span>
+                        <span class="bg-gray-100 border border-gray-200 px-3 py-1.5 rounded-md text-sm text-gray-700 font-medium">堪能する</span>
+                        <span class="bg-gray-100 border border-gray-200 px-3 py-1.5 rounded-md text-sm text-gray-700 font-medium">賑わう</span>
+                        <span class="bg-gray-100 border border-gray-200 px-3 py-1.5 rounded-md text-sm text-gray-700 font-medium">咲き誇る</span>
+                    </div>
+
+                    <p class="text-sm text-red-600 font-bold mb-4">💡 注意：教師が例文を作って教えるのはNGです！学生に作らせましょう。</p>
+
+                    <div>
+                        <div class="speech-bubble speech-bubble-border bg-blue-50 border border-blue-200 rounded-xl p-5 mt-2">
+                            <p class="text-xs font-bold text-blue-800 mb-2">🗣️ 意味と発音を確認した後、こう言います：</p>
+                            <p class="text-base text-gray-900 font-bold leading-relaxed mb-3">
+                                「『賑わう（人が多くてにぎやか）』という言葉がありますね。<br>
+                                皆さん、台湾で『賑わっている』場所はどこですか？『〇〇は賑わっています』の形で教えてください。」
+                            </p>
+                            <p class="text-sm text-gray-500">
+                                （期待する答え：「士林夜市は賑わっています」「西門町は賑わっています」等。答えたら大げさに褒める）
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden relative">
+                <div class="absolute top-0 left-0 w-2 h-full bg-purple-500"></div>
+                <div class="p-6 md:p-8">
+                    <div class="flex items-center gap-3 mb-6 border-b pb-4">
+                        <span class="bg-purple-500 text-white font-black px-3 py-1 rounded text-sm">STEP 4</span>
+                        <h3 class="text-xl font-bold text-gray-800">情境会話：お花見での交流</h3>
+                        <span class="ml-auto text-sm font-medium text-gray-400">約7〜10分</span>
+                    </div>
+
+                    <div class="mb-6 textbook-text bg-gray-50 p-4 rounded-r-lg font-serif text-sm text-gray-800 space-y-2">
+                        <span class="text-xs font-bold text-gray-500 mb-2 block font-sans">📖 会話① 賞花交流</span>
+                        <p><span class="font-bold text-purple-700">A：</span>すごいですね、この桜！</p>
+                        <p><span class="font-bold text-teal-700">B：</span>はい、満開できれいですね。</p>
+                        <p><span class="font-bold text-purple-700">A：</span>あの、すみません。写真をとってもらえますか。</p>
+                        <p><span class="font-bold text-orange-700">C：</span>はい。撮りますよ！はい！いい笑顔ですね。</p>
+                        <p><span class="font-bold text-purple-700">A：</span>ありがとうございます。撮ってあげましょうか。</p>
+                        <p><span class="font-bold text-orange-700">C：</span>そうですね。じゃ、お願いします。</p>
+                    </div>
+
+                    <div class="mb-6 text-sm text-gray-700">
+                        <p class="font-bold mb-2">基本の練習手順：</p>
+                        <ol class="list-decimal pl-5 space-y-1">
+                            <li>教師と学生でリピート練習。</li>
+                            <li>学生を3人1組（または2人1組でC役を兼任）にして読ませる。</li>
+                        </ol>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-gray-800 text-sm mb-2 flex items-center">
+                            <span class="bg-gray-800 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full mr-2">!</span>
+                            【応用】スマホを使って感情を込める
+                        </h4>
+                        
+                        <div class="speech-bubble speech-bubble-border bg-blue-50 border border-blue-200 rounded-xl p-5 mt-4">
+                            <p class="text-xs font-bold text-blue-800 mb-2">🗣️ 読む練習が終わったら、こう指示します：</p>
+                            <p class="text-base text-gray-900 font-bold leading-relaxed mb-3">
+                                「皆さん、今スマホで『日本のきれいな桜』の写真を検索してください。一番好きな写真を見つけてください。」
+                            </p>
+                            <p class="text-sm text-red-600 font-bold mb-3">（※全員が写真を見つけるまで待つ）</p>
+                            <p class="text-base text-gray-900 font-bold leading-relaxed">
+                                「では、そのスマホの画面を隣の人に見せながら、もう一度会話練習をしましょう。<br>
+                                Aさんはスマホの画面を指差しながら『すごいですね、この桜！』と言ってください。写真を撮る動作も入れてくださいね。」
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <div class="text-center pt-8 pb-12 border-t border-gray-200">
+                <p class="text-gray-500 font-medium mb-4">
+                    🎉 これで1つ目のスポットが完了です！<br>
+                    残り時間で第2、第3のスポットも同様の手順で進めてください。
+                </p>
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none transition-colors">
+                    <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+                    ページ上部へ戻る
+                </button>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
